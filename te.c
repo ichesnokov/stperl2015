@@ -13,7 +13,6 @@ int main (int argc, char *argv[]) {
     // Настройка атрибутов потока
     pthread_attr_t threadAttr;
     pthread_attr_init(&threadAttr);
-    //pthread_attr_setdetachstate(&threadAttr, PTHREAD_CREATE_DETACHED);
     pthread_attr_setdetachstate(&threadAttr, PTHREAD_CREATE_JOINABLE);
 
     pthread_t threads[MAX_THREADS];
