@@ -3,7 +3,7 @@ use v5.18;
 use warnings;
 use threads;
 
-my $COUNT       = 1e7;
+my $COUNT       = 5e7;
 my $MAX_THREADS = 10;
 my @threads;
 for my $i (1 .. $MAX_THREADS) {
