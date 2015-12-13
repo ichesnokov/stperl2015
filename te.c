@@ -44,16 +44,16 @@ void wait_for_threads(pthread_t threads[]) {
 }
 
 static void *threadFunc(void *arg) {
-    int iteration = (int) arg;
+    long iteration = (long) arg;
 
-    printf("Thread %d start\n", iteration);
+    printf("Thread %lu start\n", iteration);
     //unsigned long max = arc4random_uniform(1e9);
-    unsigned long max = 1e7;
+    unsigned long max = 1e9;
     unsigned long result = 0;
     for (int i = 1; i <= max; i++) {
        result += i;
     }
-    printf("Thread %d end\n", iteration);
+    printf("Thread %lu end\n", iteration);
 
     unsigned long *val = malloc(sizeof(unsigned long));
     *val = result;
