@@ -17,7 +17,12 @@ int main (int argc, char *argv[]) {
 
     pthread_t threads[MAX_THREADS];
     for (long iteration = 0; iteration < MAX_THREADS; iteration++) {
-        int result = pthread_create(&threads[iteration], &threadAttr, threadFunc, (void*)iteration);
+        int result = pthread_create(
+            &threads[iteration],
+            &threadAttr,
+            threadFunc,
+            (void*)iteration
+        );
         if (result != 0) {
             printf("Error creating thread: %s\n", strerror(result));
             exit(1);
