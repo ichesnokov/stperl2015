@@ -19,4 +19,4 @@ for my $i (1 .. 1000) {
     };
 }
 
-Coro::AnyEvent::sleep 10;
+Coro::AnyEvent::sleep 2;
