@@ -1,6 +1,5 @@
 #!/usr/bin/env perl
-use v5.18;
-use warnings;
+use common::sense;
 use Coro;
 
 my $COUNT       = 5e7;
