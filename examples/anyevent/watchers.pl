@@ -10,7 +10,7 @@ my $cv = AE::cv;
 my $io_w = AE::io *STDIN, 0, sub {
     chomp(my $typed = <STDIN>);
     say "Вы ввели: $typed";
-    $cv->send('Good-bye') if $typed eq 'exit';
+    $cv->send('До свиданья!') if $typed eq 'exit';
 };
 
 my $counter = 0;
