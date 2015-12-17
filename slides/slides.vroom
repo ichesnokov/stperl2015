@@ -1,0 +1,77 @@
+# This is a sample Vroom input file. It should help you get started.
+#
+# Edit this file with your content. Then run `vroom vroom` to start
+# the show!
+#
+# See `perldoc Vroom` for complete details.
+#
+---- config
+# Basic config options.
+title: Технологии асинхронного программирования
+indent: 5
+auto_size: 1
+vim_opts: '-u NONE'
+skip: 0
+
+# The following options are for Gvim usage.
+# vim: gvim
+# gvimrc: |
+#   set fuopt=maxhorz,maxvert
+#   set guioptions=egmLtT
+#   set guifont=Bitstream_Vera_Sans_Mono:h18
+#   set guicursor=a:blinkon0-ver25-Cursor
+#   colorscheme default
+
+---- center
+Технологии асинхронного программирования
+
+Илья Чесноков
+
+chesnokov.ilya@gmail.com
+
+----
+== Окружающий мир работает асинхронно
+
++* В многозадачном (параллельном) режиме
++* Объекты:
++  * взаимодействуют друг с другом
++  * выполняют задачи одновременно и независимо друг от друга
+
+----
+== Как приготовить обед?
+* Поставить чайник
+* Закинуть еду в микроволновку
+* 3-5 минут почитать книгу / посидеть за компьютером / ...
+* Услышать сигнал микроволновки
+* Вернуться, достать еду, налить чай и поесть
+
+----
+== Задачи могуть быть выполнены
+
+* Последовательно
+* Параллельно
+* Зависимо и независимо друг от друга
+* В синхронном и асинхронном режиме
+
+----
+== Вычислительные задачи
+
+* Посчитать что-нибудь
+* Скачать что-нибудь
+* Обработать данные с жесткого диска или внешнего устройства
+
+----
+== Ресурсы компьютера
+
+* CPU
++...один или более
++* RAM
++* HDD
++* Network
+
+
+----
+== Вопросы?
+
+----
+== Спасибо!
