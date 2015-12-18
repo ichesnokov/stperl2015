@@ -1,6 +1,5 @@
 #!/usr/bin/env perl
 use common::sense;
-use Coro;
 
 my $COUNT       = 1e3;
 my $MAX_THREADS = 5000;
