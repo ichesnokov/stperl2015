@@ -1,13 +1,20 @@
-Мьтексы как метод синхронизации
-Conditional variables (/ signals)
-Семафоры
+Forks:
+(?) написать примеры fork-ов (plain fork, MCE)
+
+Threads:
+* Мьютексы как метод синхронизации
+ - раскрыть понятие
+* Conditional variables (/ signals)
+ - раскрыть понятие
 
 AnyEvent
+* План глядения в исходники
 
 Coro / корутины
+* Семафоры
+ - раскрыть понятие
 
 Добавить немного про Go
 
 Упомянуть Nginx
 
-(?) написать примеры fork-ов (plain fork, MCE)
