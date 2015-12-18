@@ -1,1 +1,13 @@
-написать примеры fork-ов (plain fork, MCE)
+Мьтексы как метод синхронизации
+Conditional variables (/ signals)
+Семафоры
+
+AnyEvent
+
+Coro / корутины
+
+Добавить немного про Go
+
+Упомянуть Nginx
+
+(?) написать примеры fork-ов (plain fork, MCE)
