@@ -13,7 +13,7 @@ async {
         say "Put: $value";
         $channel->put($value);
     }
-    say 'Done';
+    say 'All items queued';
 };
 
 async {
@@ -23,3 +23,4 @@ async {
 };
 
 Coro::AnyEvent::idle;
+say 'Done';
