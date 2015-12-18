@@ -1,10 +1,9 @@
 #!/usr/bin/env perl
 use common::sense;
 use Coro;
-use Coro::AnyEvent;
 
 my $channel = Coro::Channel->new(2);
-my $iter = 0;
+my $iter    = 0;
 async {
     Coro::on_enter {
         say "Iteration: " . ++$iter;
@@ -14,13 +13,10 @@ async {
         $channel->put($value);
     }
     say 'All items queued';
+    $channel->shutdown;
 };
 
-async {
-    while (my $value = $channel->get) {
-        say "Got: $value";
-    }
-};
-
-Coro::AnyEvent::idle;
+while (my $value = $channel->get) {
+    say "Got: $value";
+}
 say 'Done';
