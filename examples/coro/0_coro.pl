@@ -5,7 +5,6 @@ use Coro::AnyEvent;
 
 my $var = 0;
 async {
-
     say "Start thread 1, var is: $var";
     $var++;
     say "Leave thread 1, var is: $var";
@@ -18,7 +17,6 @@ async {
 };
 
 async {
-
     say "Start thread 2, var is: $var";
     $var++;
     say "Leave thread 2, var is: $var";
