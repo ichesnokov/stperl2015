@@ -191,9 +191,9 @@ Threads
 ----
 == Типичные сценарии работы тредов
 
-* "Телефонная будка* (mutex)
+* "Счет в банке" (nondeterminism)
 +* "В булочной" (starvation)
-+* "Счет в банке" (nondeterminism)
++* "Телефонная будка" (mutex)
 +* "Отдых в горах" (deadlock)
 +* "Обедающие философы" (starvation, deadlock)
 
