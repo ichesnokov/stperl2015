@@ -3,31 +3,31 @@ use common::sense;
 use Coro;
 use Coro::AnyEvent;
 
-my $shared = 0;
+my $var = 0;
 async {
 
-    say "Thread 1 start, shared is: $shared";
-    $shared++;
-    say "Thread 1 leave, shared is: $shared";
+    say "Thread 1 start, var is: $var";
+    $var++;
+    say "Thread 1 leave, var is: $var";
 
     cede;
 
-    say "Thread 1 continue, shared is: $shared";
-    $shared++;
-    say "Thread 1 end, shared is: $shared";
+    say "Thread 1 continue, var is: $var";
+    $var++;
+    say "Thread 1 end, var is: $var";
 };
 
 async {
 
-    say "Thread 2 start, shared is: $shared";
-    $shared++;
-    say "Thread 2 leave, shared is: $shared";
+    say "Thread 2 start, var is: $var";
+    $var++;
+    say "Thread 2 leave, var is: $var";
 
     cede;
 
-    say "Thread 2 continue, shared is: $shared";
-    $shared++;
-    say "Thread 2 end, shared is: $shared";
+    say "Thread 2 continue, var is: $var";
+    $var++;
+    say "Thread 2 end, var is: $var";
 };
 
 Coro::AnyEvent::idle;
