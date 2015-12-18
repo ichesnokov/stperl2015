@@ -6,28 +6,28 @@ use Coro::AnyEvent;
 my $var = 0;
 async {
 
-    say "Thread 1 start, var is: $var";
+    say "Start thread 1, var is: $var";
     $var++;
-    say "Thread 1 leave, var is: $var";
+    say "Leave thread 1, var is: $var";
 
     cede;
 
-    say "Thread 1 continue, var is: $var";
+    say "Continue thread 1, var is: $var";
     $var++;
-    say "Thread 1 end, var is: $var";
+    say "End thread 1, var is: $var";
 };
 
 async {
 
-    say "Thread 2 start, var is: $var";
+    say "Start thread 2, var is: $var";
     $var++;
-    say "Thread 2 leave, var is: $var";
+    say "Leave thread 2, var is: $var";
 
     cede;
 
-    say "Thread 2 continue, var is: $var";
+    say "Continue thread 2, var is: $var";
     $var++;
-    say "Thread 2 end, var is: $var";
+    say "End thread 2, var is: $var";
 };
 
 Coro::AnyEvent::idle;
