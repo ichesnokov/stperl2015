@@ -1,0 +1,8 @@
+requires 'AnyEvent';
+requires 'AnyEvent::HTTP';
+requires 'common::sense';
+requires 'Coro';
+requires 'Coro';
+requires 'forks';
+requires 'threads';
+requires 'utf8::all';
