@@ -6,3 +6,4 @@ requires 'Coro';
 requires 'forks';
 requires 'threads';
 requires 'utf8::all';
+requires 'Vroom';
