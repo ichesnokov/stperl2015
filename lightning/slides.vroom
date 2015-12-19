@@ -1,0 +1,83 @@
+# This is a sample Vroom input file. It should help you get started.
+#
+# Edit this file with your content. Then run `vroom vroom` to start
+# the show!
+#
+# See `perldoc Vroom` for complete details.
+#
+---- config
+# Basic config options.
+title: О регулярности
+indent: 5
+auto_size: 1
+vim_opts: '-u NONE'
+skip: 0
+
+# The following options are for Gvim usage.
+# vim: gvim
+# gvimrc: |
+#   set fuopt=maxhorz,maxvert
+#   set guioptions=egmLtT
+#   set guifont=Bitstream_Vera_Sans_Mono:h18
+#   set guicursor=a:blinkon0-ver25-Cursor
+#   colorscheme default
+
+---- center
+
+О регулярности
+
+---- center
+
+Еда
++Сон
++Туалет
+
+
+---- center
+
+Покупки
++Чтение новостей / электронной почты
++Поход в любимое кафе
++Встречи с друзьями
+
+---- center
+
+Спорт
++Встречи с друзьями
++Секс
+
+---- center
+
+Курение
++Алкоголь
++Наркотики
+
+---- center
+
+Регулярные события могут принести вред или пользу
+
+---- center
+
+Привычка формируется за 21 день
+
+...и многие этим пользуются.
+
+----
+== Регулярные события в мире Perl
+
+* Релизы Perl и различных модулей
++* Конференции встречи / воркшопы / хакатоны
++* Блоги
++* Статьи в Pragmatic Perl
++* Challenges
++  - Iron man challenge
++  - CPAN PR challenge
++* Perl Advent Calendar
+
+---- center
+
+Perl Advent Calendar
+
+http://perladvent.org
+
+----
