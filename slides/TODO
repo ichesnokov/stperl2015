@@ -1,13 +1,5 @@
-* Forks: написать примеры fork-ов (plain fork, MCE) - нахуй
-
 Threads:
 * Мьютексы как метод синхронизации
  - раскрыть понятие - Устно
 * Conditional variables (/ signals)
  - раскрыть понятие - Устно
-
-* AnyEvent -План глядения в исходники - Done
-
-Coro / корутины - Done
-Добавить немного про Go - Done
-Упомянуть Nginx - Нахуй
