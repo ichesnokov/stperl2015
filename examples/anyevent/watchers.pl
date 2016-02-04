@@ -24,10 +24,10 @@ my $idle_w = AnyEvent->idle(cb => sub {
 
 # Set up timer watcher
 my $timer_w = AnyEvent->timer(
-    after    => 5,
-    interval => 5,
+    after    => 2,
+    interval => 2,
     cb       => sub {
-        say "Прошло еще 5 секунд";
+        say "Прошло еще 2 секунды";
     }
 );
 
