@@ -18,8 +18,8 @@ my $io_w = AnyEvent->io(
 
 # Set up idle watcher
 my $counter = 0;
-my $idle_w = AnyEvent->idle(sub {
-    say "Я досчитал до $counter!" if ++$counter % 5e6 == 0;
+my $idle_w = AnyEvent->idle(cb => sub {
+    say "Я досчитал до $counter!" if ++$counter % 5e5 == 0;
 });
 
 # Set up timer watcher
