@@ -1,7 +1,7 @@
 #!/usr/bin/env perl
 use common::sense;
 
-my $COUNT       = 5e7;
+my $COUNT       = 2e7;
 my $MAX_THREADS = 10;
 my @threads;
 for my $i (1 .. $MAX_THREADS) {
